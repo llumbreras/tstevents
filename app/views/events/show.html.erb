@@ -1,0 +1,10 @@
+<h1>Event Details</h1>
+
+<ul>
+	<li><%= @event.name %></li>
+	<li><%= @event.description %></li>
+	<li><%= @event.location %></li>
+	<li><%= number_to_currency(@event.price) %></li>
+</ul>
+
+<%= link_to "All Events", events_path %>
