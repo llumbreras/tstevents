@@ -1,1 +1,9 @@
 <h1>Event Listing</h1>
+<ul>
+<% @events.each do | event | %>
+	<li><%= event.name %></li>
+	<li><%= event.location %></li>
+	<li><%= event.description %></li>
+	<li><%= event.price %></li>
+<% end %>
+</ul>
