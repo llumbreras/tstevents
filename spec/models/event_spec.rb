@@ -13,7 +13,7 @@ describe "Event" do
 		expect(event.free?).to eq(false)
 	end
 	it "is free if blank" do
-		event = Event.new(price:'')
+		event = Event.new(price: '')
 
 		expect(event.free?).to eq(true)
 	end
